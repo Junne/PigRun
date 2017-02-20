@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79CCD6EB1E5B2CF000F13C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCD6EA1E5B2CF000F13C99 /* AppDelegate.swift */; };
+		79CCD6ED1E5B2CF000F13C99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCD6EC1E5B2CF000F13C99 /* ViewController.swift */; };
+		79CCD6F01E5B2CF000F13C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CCD6EE1E5B2CF000F13C99 /* Main.storyboard */; };
+		79CCD6F21E5B2CF000F13C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CCD6F11E5B2CF000F13C99 /* Assets.xcassets */; };
+		79CCD6F51E5B2CF000F13C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CCD6F31E5B2CF000F13C99 /* LaunchScreen.storyboard */; };
+		79CCD7001E5B2CF100F13C99 /* PigRunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCD6FF1E5B2CF100F13C99 /* PigRunTests.swift */; };
+		79CCD70B1E5B2CF100F13C99 /* PigRunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCD70A1E5B2CF100F13C99 /* PigRunUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79CCD6FC1E5B2CF100F13C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79CCD6DF1E5B2CF000F13C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79CCD6E61E5B2CF000F13C99;
+			remoteInfo = PigRun;
+		};
+		79CCD7071E5B2CF100F13C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79CCD6DF1E5B2CF000F13C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79CCD6E61E5B2CF000F13C99;
+			remoteInfo = PigRun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79CCD6E71E5B2CF000F13C99 /* PigRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PigRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CCD6EA1E5B2CF000F13C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79CCD6EC1E5B2CF000F13C99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79CCD6EF1E5B2CF000F13C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79CCD6F11E5B2CF000F13C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79CCD6F41E5B2CF000F13C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79CCD6F61E5B2CF000F13C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CCD6FB1E5B2CF100F13C99 /* PigRunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PigRunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CCD6FF1E5B2CF100F13C99 /* PigRunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigRunTests.swift; sourceTree = "<group>"; };
+		79CCD7011E5B2CF100F13C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CCD7061E5B2CF100F13C99 /* PigRunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PigRunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CCD70A1E5B2CF100F13C99 /* PigRunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigRunUITests.swift; sourceTree = "<group>"; };
+		79CCD70C1E5B2CF100F13C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79CCD6E41E5B2CF000F13C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CCD6F81E5B2CF100F13C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CCD7031E5B2CF100F13C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79CCD6DE1E5B2CF000F13C99 = {
+			isa = PBXGroup;
+			children = (
+				79CCD6E91E5B2CF000F13C99 /* PigRun */,
+				79CCD6FE1E5B2CF100F13C99 /* PigRunTests */,
+				79CCD7091E5B2CF100F13C99 /* PigRunUITests */,
+				79CCD6E81E5B2CF000F13C99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79CCD6E81E5B2CF000F13C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79CCD6E71E5B2CF000F13C99 /* PigRun.app */,
+				79CCD6FB1E5B2CF100F13C99 /* PigRunTests.xctest */,
+				79CCD7061E5B2CF100F13C99 /* PigRunUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79CCD6E91E5B2CF000F13C99 /* PigRun */ = {
+			isa = PBXGroup;
+			children = (
+				79CCD6EA1E5B2CF000F13C99 /* AppDelegate.swift */,
+				79CCD6EC1E5B2CF000F13C99 /* ViewController.swift */,
+				79CCD6EE1E5B2CF000F13C99 /* Main.storyboard */,
+				79CCD6F11E5B2CF000F13C99 /* Assets.xcassets */,
+				79CCD6F31E5B2CF000F13C99 /* LaunchScreen.storyboard */,
+				79CCD6F61E5B2CF000F13C99 /* Info.plist */,
+			);
+			path = PigRun;
+			sourceTree = "<group>";
+		};
+		79CCD6FE1E5B2CF100F13C99 /* PigRunTests */ = {
+			isa = PBXGroup;
+			children = (
+				79CCD6FF1E5B2CF100F13C99 /* PigRunTests.swift */,
+				79CCD7011E5B2CF100F13C99 /* Info.plist */,
+			);
+			path = PigRunTests;
+			sourceTree = "<group>";
+		};
+		79CCD7091E5B2CF100F13C99 /* PigRunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79CCD70A1E5B2CF100F13C99 /* PigRunUITests.swift */,
+				79CCD70C1E5B2CF100F13C99 /* Info.plist */,
+			);
+			path = PigRunUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79CCD6E61E5B2CF000F13C99 /* PigRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CCD70F1E5B2CF100F13C99 /* Build configuration list for PBXNativeTarget "PigRun" */;
+			buildPhases = (
+				79CCD6E31E5B2CF000F13C99 /* Sources */,
+				79CCD6E41E5B2CF000F13C99 /* Frameworks */,
+				79CCD6E51E5B2CF000F13C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PigRun;
+			productName = PigRun;
+			productReference = 79CCD6E71E5B2CF000F13C99 /* PigRun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79CCD6FA1E5B2CF100F13C99 /* PigRunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CCD7121E5B2CF100F13C99 /* Build configuration list for PBXNativeTarget "PigRunTests" */;
+			buildPhases = (
+				79CCD6F71E5B2CF100F13C99 /* Sources */,
+				79CCD6F81E5B2CF100F13C99 /* Frameworks */,
+				79CCD6F91E5B2CF100F13C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79CCD6FD1E5B2CF100F13C99 /* PBXTargetDependency */,
+			);
+			name = PigRunTests;
+			productName = PigRunTests;
+			productReference = 79CCD6FB1E5B2CF100F13C99 /* PigRunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79CCD7051E5B2CF100F13C99 /* PigRunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CCD7151E5B2CF100F13C99 /* Build configuration list for PBXNativeTarget "PigRunUITests" */;
+			buildPhases = (
+				79CCD7021E5B2CF100F13C99 /* Sources */,
+				79CCD7031E5B2CF100F13C99 /* Frameworks */,
+				79CCD7041E5B2CF100F13C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79CCD7081E5B2CF100F13C99 /* PBXTargetDependency */,
+			);
+			name = PigRunUITests;
+			productName = PigRunUITests;
+			productReference = 79CCD7061E5B2CF100F13C99 /* PigRunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79CCD6DF1E5B2CF000F13C99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Junne;
+				TargetAttributes = {
+					79CCD6E61E5B2CF000F13C99 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					79CCD6FA1E5B2CF100F13C99 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79CCD6E61E5B2CF000F13C99;
+					};
+					79CCD7051E5B2CF100F13C99 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79CCD6E61E5B2CF000F13C99;
+					};
+				};
+			};
+			buildConfigurationList = 79CCD6E21E5B2CF000F13C99 /* Build configuration list for PBXProject "PigRun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79CCD6DE1E5B2CF000F13C99;
+			productRefGroup = 79CCD6E81E5B2CF000F13C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79CCD6E61E5B2CF000F13C99 /* PigRun */,
+				79CCD6FA1E5B2CF100F13C99 /* PigRunTests */,
+				79CCD7051E5B2CF100F13C99 /* PigRunUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79CCD6E51E5B2CF000F13C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CCD6F51E5B2CF000F13C99 /* LaunchScreen.storyboard in Resources */,
+				79CCD6F21E5B2CF000F13C99 /* Assets.xcassets in Resources */,
+				79CCD6F01E5B2CF000F13C99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CCD6F91E5B2CF100F13C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CCD7041E5B2CF100F13C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79CCD6E31E5B2CF000F13C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CCD6ED1E5B2CF000F13C99 /* ViewController.swift in Sources */,
+				79CCD6EB1E5B2CF000F13C99 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CCD6F71E5B2CF100F13C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CCD7001E5B2CF100F13C99 /* PigRunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CCD7021E5B2CF100F13C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CCD70B1E5B2CF100F13C99 /* PigRunUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79CCD6FD1E5B2CF100F13C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79CCD6E61E5B2CF000F13C99 /* PigRun */;
+			targetProxy = 79CCD6FC1E5B2CF100F13C99 /* PBXContainerItemProxy */;
+		};
+		79CCD7081E5B2CF100F13C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79CCD6E61E5B2CF000F13C99 /* PigRun */;
+			targetProxy = 79CCD7071E5B2CF100F13C99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79CCD6EE1E5B2CF000F13C99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79CCD6EF1E5B2CF000F13C99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79CCD6F31E5B2CF000F13C99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79CCD6F41E5B2CF000F13C99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79CCD70D1E5B2CF100F13C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79CCD70E1E5B2CF100F13C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79CCD7101E5B2CF100F13C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PigRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		79CCD7111E5B2CF100F13C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PigRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		79CCD7131E5B2CF100F13C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PigRunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PigRun.app/PigRun";
+			};
+			name = Debug;
+		};
+		79CCD7141E5B2CF100F13C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PigRunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PigRun.app/PigRun";
+			};
+			name = Release;
+		};
+		79CCD7161E5B2CF100F13C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PigRunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PigRun;
+			};
+			name = Debug;
+		};
+		79CCD7171E5B2CF100F13C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PigRunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PigRun;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79CCD6E21E5B2CF000F13C99 /* Build configuration list for PBXProject "PigRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CCD70D1E5B2CF100F13C99 /* Debug */,
+				79CCD70E1E5B2CF100F13C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CCD70F1E5B2CF100F13C99 /* Build configuration list for PBXNativeTarget "PigRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CCD7101E5B2CF100F13C99 /* Debug */,
+				79CCD7111E5B2CF100F13C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79CCD7121E5B2CF100F13C99 /* Build configuration list for PBXNativeTarget "PigRunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CCD7131E5B2CF100F13C99 /* Debug */,
+				79CCD7141E5B2CF100F13C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79CCD7151E5B2CF100F13C99 /* Build configuration list for PBXNativeTarget "PigRunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CCD7161E5B2CF100F13C99 /* Debug */,
+				79CCD7171E5B2CF100F13C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79CCD6DF1E5B2CF000F13C99 /* Project object */;
+}
