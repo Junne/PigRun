@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					79CCD6E61E5B2CF000F13C99 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4LPHNA9H37;
 						ProvisioningStyle = Automatic;
 					};
 					79CCD6FA1E5B2CF100F13C99 = {
@@ -412,9 +413,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4LPHNA9H37;
 				INFOPLIST_FILE = PigRun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRun;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.pigrun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,9 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4LPHNA9H37;
 				INFOPLIST_FILE = PigRun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.PigRun;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.pigrun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
