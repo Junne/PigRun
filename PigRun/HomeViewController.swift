@@ -14,6 +14,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
 
     @IBOutlet weak var homeMap: MKMapView!
     let locationManager = CLLocationManager()
+    var locations: NSMutableArray?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,8 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         homeMap.delegate = self
         homeMap.showsUserLocation = true
         homeMap.userTrackingMode = .follow
+        
+        self.locations = NSMutableArray()
         
         setupData()
 
@@ -52,10 +55,14 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             let circle = MKCircle(center: coordinate, radius: regionRadius)
             self.homeMap.add(circle)
             
+            locationManager.startUpdatingLocation()
+            
         } else {
             print("Syster can't track regions")
         }
     }
+    
+    // MARK: - MKMapViewDelegate
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let circleRenderer = MKCircleRenderer(overlay: overlay)
@@ -86,6 +93,24 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         print("exit \(region.identifier)")
     }
+    
+    // MARK: - CLLocationManagerDelegate
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        for newLocation:CLLocation in locations {
+            let eventDate = newLocation.timestamp;
+            let howRecent = eventDate.timeIntervalSinceNow
+            if fabs(howRecent) < 10.0 && newLocation.horizontalAccuracy < 20 {
+                if (self.locations?.count)! > 0 {
+                    var coords[2]:CLLocationCoordinate2D
+                    coords[0] = self.locations.lastObject.coordinate
+                }
+                
+                self.locations?.add(newLocation)
+            }
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
