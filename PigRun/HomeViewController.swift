@@ -30,7 +30,38 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         homeMap.showsUserLocation = true
         homeMap.userTrackingMode = .follow
         
+        setupData()
 
+    }
+    
+    func setupData() {
+        if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+        
+            let title = "Lorrenzillo's"
+            let coordinate = CLLocationCoordinate2DMake(39.92, 116.46)
+            let regionRadius = 300.0
+            
+            let region = CLCircularRegion(center: CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude), radius: regionRadius, identifier: title)
+            locationManager.startMonitoring(for: region)
+            
+            let restaurantAnnotation = MKPointAnnotation()
+            restaurantAnnotation.coordinate = coordinate
+            restaurantAnnotation.title = "\(title)"
+            self.homeMap.addAnnotation(restaurantAnnotation)
+            
+            let circle = MKCircle(center: coordinate, radius: regionRadius)
+            self.homeMap.add(circle)
+            
+        } else {
+            print("Syster can't track regions")
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let circleRenderer = MKCircleRenderer(overlay: overlay)
+        circleRenderer.strokeColor = UIColor.red
+        circleRenderer.lineWidth = 1.0
+        return circleRenderer
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,6 +76,15 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         else if CLLocationManager.authorizationStatus() == .authorizedAlways {
             locationManager.startUpdatingLocation()
         }
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        print("enter\(region.identifier)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        print("exit \(region.identifier)")
     }
 
     override func didReceiveMemoryWarning() {
