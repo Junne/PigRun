@@ -102,8 +102,13 @@ class HomeViewController: UIViewController, MKMapViewDelegate, CLLocationManager
             let howRecent = eventDate.timeIntervalSinceNow
             if fabs(howRecent) < 10.0 && newLocation.horizontalAccuracy < 20 {
                 if (self.locations?.count)! > 0 {
-                    var coords[2]:CLLocationCoordinate2D
-                    coords[0] = self.locations.lastObject.coordinate
+                    var coords = [CLLocationCoordinate2D]()
+                    coords[0] = (self.locations!.lastObject as! CLLocation).coordinate
+                    coords[1] = newLocation.coordinate
+                    
+                    let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
+                    self.homeMap.setRegion(region, animated: true)
+                    self.homeMap.add(MKPolyline(coordinates: coords, count: 2))
                 }
                 
                 self.locations?.add(newLocation)
